@@ -114,13 +114,13 @@ a{
     font-weight: 300;
 }
 .user_name {
-    background: #ffffff url("img/block1/search1.png") left no-repeat;
+    background: #ffffff url("C:/Users/1/Desktop/2project/img/block1/search1.png") left no-repeat;
 }
 .user_email {
-    background: #ffffff url("img/block1/search2.png") left no-repeat;
+    background: #ffffff url("C:/Users/1/Desktop/2project/img/block1/search2.png") left no-repeat;
 }
 .user_phone {
-    background: #ffffff url("img/block1/search3.png") left no-repeat;
+    background: #ffffff url("C:/Users/1/Desktop/2project/img/block1/search3.png") left no-repeat;
 }
 .home__img {
     display: flex;
