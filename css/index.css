@@ -169,9 +169,6 @@ a{
 .column__body {
     padding-left: 40px;
 }
-.img6{
-    margin-left: 15px;
-}
 .column__title {
     font-size: 16px;
     font-weight: 700;
@@ -445,10 +442,9 @@ a{
     margin: 40px 0px 0px 120px;
     text-align: center;
 }
-.phone__menu,
-.phone__contact{
-    background: url("img/block7/icon3.png")center no-repeat;
-    background-size:auto;
+.phone__menu, .phone__contact {
+    background: url("../img/block7/icon3.png")center no-repeat;
+    background-size: contain;
     margin-right: 100px;
 }
 .contact__media {
@@ -491,9 +487,6 @@ a{
      .blocks__row{
         align-items: center;
      }
-     .block{
-         max-width: 50%;
-     }
      .search__button{
         margin-top: 20px;
      }
@@ -505,13 +498,12 @@ a{
      .container{
         max-width: 600px;
      }
-     .reviews {
-        display: flex;
-        flex-wrap: wrap;
-    }
     .columns__item {
         margin: 30px 5px;
         padding: 0px;
+    }
+     div#\35 {
+    margin-top: 15px;
     }
     .columns__row {
         display: flex;
@@ -556,13 +548,50 @@ a{
     .nav a {
         margin-right: 10px;
     }
-    .img6{
-    margin-left: none;
+    .price__body  { 
+        text-align : center; 
+        padding-bottom: 25px ; 
+        line-height: 22px ; 
+    }
+    .price__title  { 
+        font-size :  30px; 
+        line-height: 22px; 
+        font-weight: 900; 
+        text-transform: uppercase; 
+        color : #394b50 ; 
+  }
+    .how__body  { 
+        text-align: center; 
+        line-height: 22px ; 
+    }
+    .clients__body  { 
+        text-align: center; 
+        margin-bottom: 40px;  
+        color: #ffffff; 
+        line-height: 22px ; 
+      }
+    .client__img  { 
+        padding-bottom  : 20px ; 
+    }
+    .home__body  { 
+        text-align : center; 
+         line-height : 22px ; 
+        color: #ffffff ; 
+      } 
+    .home__title  { 
+        font-size : 22px ; 
+    }
+    .home__text  { 
+        font-size : 13px ; 
+        font-weight : 300 ; 
     }
 }
 @media screen and (max-width:767px){
     body .lock {
         overflow: hidden;
+    }
+    div#\35 {
+    margin-top: 0px;
     }
     header.header {
     padding: 20px;
@@ -581,132 +610,136 @@ a{
     top: 0;
     left: 0;
     margin: 10px;
-}
-.menu-item {
-    display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    transition-duration: .25s;
-}
-.menu-item:hover {
-    background-color: #CFD8DC;
-}
-.menu__logo {
-    text-align: center;
-    margin-bottom: 30px;
-}
-.phone__menu {
-    background-position: left;
-    margin: 20px;
-}
-#menu-toggle{
-    opacity: 0;
-}
-#menu-toggle:checked ~ .menu-btn > span{
-    transform: rotate(45deg);
-}
-#menu-toggle:checked ~ .menu-btn > span::before{
-    top: 0;
-    transform: rotate(0);
-}
-#menu-toggle:checked ~ .menu-btn > span::after{
-    top: 0;
-    transform: rotate(90deg);
-}
-#menu-toggle:checked ~ .menubox{
-    visibility: visible;
-    left: 0;
-}
-.menu-btn{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-}
-.phone__menu {
-    background-position: center;
-    text-align: center;
-    margin: 20px 80px 0px 0px;
-}
-.phone {
-    margin-left: 100px;
-}
- 
-.menu-btn > span,
-.menu-btn > span::before,
-.menu-btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #616161;
-    transition-duration: .25s;
-}
-.menu-btn > span::before {
-    content: '';
-    top: -8px;
-}
-.menu-btn > span::after {
-    content: '';
-    top: 8px;
-}
- 
-.menubox{
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
-    width: 300px;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    background-color: #ECEFF1;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    transition-duration: .25s;
-}
- 
-.menu-item {
-    display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    transition-duration: .25s;
-}
-.menu-item:hover {
-    background-color: #CFD8DC;
-}
- 
-#menu-toggle{
-    opacity: 0;
-}
- 
-#menu-toggle:checked ~ .menu-btn > span{
-    transform: rotate(45deg);
-}
-#menu-toggle:checked ~ .menu-btn > span::before{
-    top: 0;
-    transform: rotate(0);
-}
-#menu-toggle:checked ~ .menu-btn > span::after{
-    top: 0;
-    transform: rotate(90deg);
-}
-#menu-toggle:checked ~ .menubox{
-    visibility: visible;
-    left: 0;
-}
+    }
+    .menu-item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+    }
+    .menu-item:hover {
+        background-color: #CFD8DC;
+    }
+    .menu__logo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .phone__menu {
+        background-position: left;
+        margin: 20px;
+    }
+    #menu-toggle{
+        opacity: 0;
+    }
+    #menu-toggle:checked ~ .menu-btn > span{
+        transform: rotate(45deg);
+    }
+    #menu-toggle:checked ~ .menu-btn > span::before{
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu-toggle:checked ~ .menu-btn > span::after{
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu-toggle:checked ~ .menubox{
+        visibility: visible;
+        left: 0;
+    }
+    .menu-btn{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .phone__menu {
+        background-position: center;
+        text-align: center;
+        margin: 20px 80px 0px 0px;
+    }
+    .phone {
+        margin-left: 100px;
+    }
+
+    .reviews {
+        flex-direction: column;
+    } 
+
+    .menu-btn > span,
+    .menu-btn > span::before,
+    .menu-btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+        transition-duration: .25s;
+    }
+    .menu-btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu-btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    
+    .menubox{
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        transition-duration: .25s;
+    }
+    
+    .menu-item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+    }
+    .menu-item:hover {
+        background-color: #CFD8DC;
+    }
+    
+    #menu-toggle{
+        opacity: 0;
+    }
+    
+    #menu-toggle:checked ~ .menu-btn > span{
+        transform: rotate(45deg);
+    }
+    #menu-toggle:checked ~ .menu-btn > span::before{
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu-toggle:checked ~ .menu-btn > span::after{
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu-toggle:checked ~ .menubox{
+        visibility: visible;
+        left: 0;
+    }
 }
