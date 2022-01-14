@@ -108,6 +108,7 @@ a{
 }
 .home__title {
     font-size: 35px;
+    text-transform: uppercase;
 }
 .home__text {
     font-size: 16px;
@@ -559,7 +560,7 @@ a{
         font-weight: 900; 
         text-transform: uppercase; 
         color : #394b50 ; 
-  }
+    }
     .how__body  { 
         text-align: center; 
         line-height: 22px ; 
@@ -575,7 +576,7 @@ a{
     }
     .home__body  { 
         text-align : center; 
-         line-height : 22px ; 
+        line-height : 22px ; 
         color: #ffffff ; 
       } 
     .home__title  { 
@@ -666,10 +667,6 @@ a{
         text-align: center;
         margin: 20px 80px 0px 0px;
     }
-    .phone {
-        margin-left: 100px;
-    }
-
     .reviews {
         flex-direction: column;
     } 
